@@ -1,3 +1,7 @@
+.body{
+background-color: #f2f2f2;
+}
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -7,25 +11,412 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  bottom: 100px;
   /* parameters for the header section */
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo{
+  background-image: url(../images/logo_place_header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 154px;
+  height: 31px;
+  top: 30px;
+  left: 64px;
+}
+.title{
+position: absolute;
+top: 50%;
+left: 64px;
+transform: translateY(-50%);
+width: 730px;
+line-height: 96px;
 }
 
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
+.header__title{
+  font-weight: bold;
+  z-index: 4;
+  text-decoration: none;
+  font-size: 102px;
+  color: black;
+}
+
+.subtitle{
+position: absolute;
+bottom: 30px;
+left: 64px;
+width: 388px;
+font-size: 18px;
+z-index: 3;
+line-height: 25px;
+font-weight: normal;
+margin-bottom: 0;
+}
+
+.link{
+color: blue;
+line-height: 25px;
+font-weight: normal;
+}
+
+.main-illustration{
+position: absolute;
+margin-bottom: 0;
+right: 0;
+z-index: 2;
+width: 756px;
+height: 608px;
+}
+
+.square{
+z-index: -1;
+height: 568px;
+width: 568px;
+top: 64px;
+right: 0;
+position: absolute;
+background-color: blue;
+}
+
+
+.description{
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  padding-top: 100px;
+}
+
+.container{
+width: 80%;
+margin: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+display: flex;
+justify-content: space-between;
+}
+
+.two-columns{
+  display: flex;
+width: 80%;
+text-align: left;
+flex-direction: column;
+justify-content: center flex-start;
+align-items: center flex-start;
+box-sizing: border-box;
+}
+
+.brief{
+flex: 1;
+text-decoration: none;
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+color: blue;
+}
+
+.main-text{
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+flex: 4;
+text-decoration: none;
+margin: 0 0 30px;
+}
+
+.boldtxt{
+font-weight: bolder;
+}
+
+.paragraph{
+bottom: 30px;
+text-decoration: none;
+position: inherit;
+flex: 100%;
+}
+
+.digits{
+padding-top: 100px;
+}
+
+.section-title{
+
+margin: 0 auto;
+display: flex;
+justify-content: center;
+text-align: center;
+margin-bottom: 20px;
+width: 60%;
+line-height: 1.15;
+font-size: 60px;
+font-weight: bold;
+z-index: 3;
+}
+
+.section-subtitle{
+ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.table{
+ 
+  list-style: none;
+  margin:  auto;
+  width: 1100px;
+  bottom: 100px;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+z-index: 2;
+}
+
+.cell{
+
+width: 250px;
+flex: none;
+}
+
+.cell:nth-child(-n + 4) {
+  margin-bottom: 60px;
+}
+
+.heading{
+ 
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+}
+
+.text{
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+}
+
+.text2{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman{
+  height: 790px;
+  position: relative;
+}
+.titleF{
+display: flex;
+justify-content: center;
+margin-top: 0;
+padding-top: 100px;
+align-items: center;
+}
+
+.headertitleF{
+
+font-weight: bold;
+margin: 0;
+text-decoration: none;
+text-align: center;
+line-height: 1.15;
+font-size: 102px;
+color: black;
+width: 775px;
+}
+
+.subtitleF{
+
+font-size: 36px;
+line-height: 51px;
+font-weight: normal;
+margin: 0  0;
+text-align: center;
+padding-top: 70px;
+}
+
+.linkF{
+
+position: absolute;
+top: 50%;
+right: 48px;
+transform: translateY(-50%);
+list-style: 51px;
+font-size: 36px;
+font-weight: normal;
+color: blue;
+}
+
+.imageF{
+  
+  width: 867px;
+  height: 637px;
+  background-image: url(../images/feynman.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute; /* Ajustar la posición */
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.kaufman{
+  padding-top: 90px;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  }
+
+.tf{
+  color: #f2f2f2;
+  z-index: 3;
+  }
+.theme{
   width: 200px;
-  color: white;
-  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: none;
+  color: #f2f2f2;
+  z-index: 2;
+}
+.theme:nth-child(-n + 5) {
   margin-top: 80px;
+}
+
+.triangle{
+ 
+  width: 660px;
+  height: 636px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute; /* Ajustar la posición */
+  top: 0;
+  right: -124px;
+  z-index: -1;
+}
+
+.footer{
+
+background-color: black;
+min-height: 350px;
+}
+
+.columns{
+
+  min-height: 250px;
+  margin-bottom: 40px;
+margin-top: 60px;
+  margin:  auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #f2f2f2;
+
+}
+
+.column{
+flex: none;
+}
+
+.copyright{
+ 
+  flex-basis:  calc(50% + 1px);/* 711px;*/
+  position: relative;
+}
+    .logof{
+      background-image: url(../images/logo_place_footer.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 183px;
+      height: 35px;
+      top: 0px;
+      left: 0px;
+    }
+    .nombre{
+      line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+      position: relative; /* Ajustar la posición */
+      position: absolute;
+      left: 0;
+      bottom: 18px;
+      
+    }
+.about{
+  
+display: inline;
+padding: 0;
+}
+
+.column-heading{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+margin-bottom: 20px;
+}
+
+.list{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+list-style: none;
+}
+  
+
+
+.social{
+  
+  display: inline;
+padding: 0;
+}
+
+
+
+.column-link{
+  position: relative;
+}
+
+.social-icons{
+  position: absolute;
+  z-index: 5;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  padding-right: 10px;
+}
+.facebook{
+  background-image: url(../images/facebook_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Instagram{
+  background-image: url(../images/instagram_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.smtext{
+margin-left: 26px;
 }
